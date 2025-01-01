@@ -1,0 +1,137 @@
+ .footer{ 
+  background:yellow; 
+  display:flex;  
+  align-items:center; 
+  justify-content:center;
+  height:10vh;
+  flex-direction:row;
+  color:darkgrey;     
+  width:100%; 
+   }
+  
+  
+.header{    
+  font-size:5vh; 
+  display:flex; 
+  justify-content:center;
+  align-items:center;
+  height:10vh;
+  flex-direction:row;
+  color:White;  
+  background:rgb(0,200,150);   
+  width:100%;  
+  }
+ a{
+  color:rgb(41,125,90);  
+   display:flex; 
+   align-items:center; 
+   justify-content:space-between; 
+   flex-direction:row ; 
+   font-size:6vh; 
+   margin:4vh;
+   }
+ #main { 
+  background:rgb(5,250,150);
+  display:flex;
+  height:100%; 
+  flex-direction:row;  
+  width:100%;
+  } 
+h1{ 
+  font-family:'Dancing-Script',cursive; 
+  color:orange; 
+  margin:5VH; 
+  font-size:8vh;
+  }  
+h4{ 
+font-family:'Dancing-Script',cursive;  
+margin-left:4vh;  
+  font-size:3.7vh; 
+  display:flex ;  
+  align-items:center; 
+  justify-content:space-between; 
+  flex-direction:row;  
+  height:5vh;
+ } 
+  
+p{  
+   
+  font-size:4vh;
+  
+  }
+.pa{ 
+  color:white; 
+  display:flex; 
+  align-items:center; 
+  justify-content:center; 
+  font-size:6vh; 
+  margin:6vh;
+ } 
+.pb{  
+  color:white; 
+  margin:3vh;
+  }
+label {  
+  color:white;   
+  margin-left:5%;  
+  display:inline-block; 
+  font-size:5vh;  
+  margin:5vh 2vh; 
+  
+}  
+input{ 
+  margin-top:5%;
+  color:rgb(0,200,150);  
+  width:80%;  
+  height:4%; 
+  border:1px solid black; 
+  border-radius:15vh;  
+  display:f
+    }   
+  input { 
+  background:rgb(0,200,150); 
+  } 
+input:focus{ 
+  background:lightgreen; 
+  }
+  button {  
+   color:white;
+   background:yellow;  
+   border-radius:5vh; 
+   border:0.1vh solid yellow; 
+   padding:1vh 3vh;  
+   font-size:5vh; 
+   margin:2vh 4vh; 
+  
+  } 
+button:hover { 
+
+color:yellow; 
+ background:lightgreen; 
+  }
+  .about{ 
+  background:rgb(10,0,1); 
+  height:100%;  
+    width:100%; 
+    display:inline-block;
+  align-items:center; 
+  justify-content:center;
+}  
+ h2{ 
+  color:rgb(56,255,48);  
+   font-size:4vh;  
+   margin:6vh;
+  }
+  
+    
+        #loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+          z-index:9999;
+}
+        #container {
+            display: none; 
+        }
+    
