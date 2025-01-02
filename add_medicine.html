@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <link rel="icon" type="image/svg+xml" href="https://i.pinimg.com/236x/35/ea/db/35eadb09d8551434094336b05f1fbbb1.jpg">
+    <link rel="icon" type="image/svg+xml" href="/images/icon.jpg">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Add medicine</title>
+      <meta name="title" content="Add medicine">
+      <meta name="description" content="Find Medicine">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://medi-finder.netlify.app/">
+      <meta property="og:title" content="Add medicine">
+      <meta property="og:description" content="Find Medicine">
+      <meta property="og:image" content="/images/banner.png">
+      <meta property="twitter:card" content="summary_large_image">
+      <meta property="twitter:url" content="https://medi-finder.netlify.app/">
+      <meta property="twitter:title" content="Add medicine">
+      <meta property="twitter:description" content="Find Medicine">
+      <meta property="twitter:image" content="/images/banner.png">
+      <script type="module" crossorigin="" src=""></script>
+      <link rel="stylesheet" crossorigin="" href="/css/styles.css">
+            <meta name="title" content="Add medicine" data-react-helmet="true">
+      <meta name="description" content="Find Medicine" data-react-helmet="true">
+      <meta property="og:type" content="website" data-react-helmet="true">
+      <meta property="og:url" content="https://medi-finder.netlify.app/" data-react-helmet="true">
+      <meta property="og:title" content="Add medicine" data-react-helmet="true">
+      <meta property="og:description" content="Find Medicine" data-react-helmet="true">
+      <meta property="twitter:card" content="summary_large_image" data-react-helmet="true">
+      <meta property="twitter:url" content="https://medi-finder.netlify.app/" data-react-helmet="true">
+      <meta property="twitter:title" content="Add medicine" data-react-helmet="true">
+      <meta property="twitter:description" content="Find Medicine" data-react-helmet="true">
+   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <style>
+        #loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999; /* Ensure the loader is on top */
+        }
+
+        body {
+            margin: 0;
+            overflow: hidden; /* Prevent scrolling during loading */
+        }
+
+        #content {
+            display: none; /* Hide content initially */
+        }
+    </style>
+</head>
+<body>
+    <div id="loader">
+        <img src="https://i.pinimg.com/originals/f0/b3/0a/f0b30a6f5c823a17bf22564bfbc8444f.gif" alt="Loading....">
+    </div>
+    <div id="content">
+        <header>
+            <h1>Add a New Medicine</h1>
+            <nav>
+                <a href="index.html">Back to Search</a>
+                <a href="contact.html">About coder</a>
+            </nav>
+        </header>
+    
+        <!-- Add Medicine Form -->
+        <section id="add-medicine-section">
+            <form id="add-medicine-form">
+                <input type="text" id="new-medicine-name" placeholder="Medicine Name" required />
+                <input type="text" id="new-medicine-manufacturer" placeholder="Manufacturer" required />
+                <input type="number" id="new-medicine-price" placeholder="Price (Rs.)" required />
+                <select id="new-medicine-category" required>
+                    <option value="Original Medicine">Original Medicine</option>
+                    <option value="Alternative">Alternative</option>
+                </select>
+                <input type="url" id="new-medicine-image" placeholder="Image URL (optional)" />
+                <button type="submit">Add Medicine</button>
+            </form>
+        </section>
+    
+        <script src="/script/add_medicine.js"></script>
+    </div>    
+    <script>
+        setTimeout(function() {
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+            document.body.style.overflow = 'auto'; /* Allow scrolling after loading */
+        }, 000); // 000 milliseconds = 2 seconds
+
+      /*  Other java script*/
+    </script>
+</body>
+</html>
+ 
